@@ -1,0 +1,1 @@
+ALTER TABLE `wompi_data_orden` ADD `id_wompi` VARCHAR(50) NULL AFTER `metodo_pago`;
