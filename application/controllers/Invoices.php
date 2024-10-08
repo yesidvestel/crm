@@ -49,6 +49,7 @@ class Invoices extends CI_Controller
         $data['due']=$data['dt']->due;
         $_SESSION['dt_customer']=$data['dt']->data_customer;
         $data['promo1']=$data['dt']->data_promos;
+        $data['data_estados_promos']=$data['dt']->data_estados_promos;
         $data['wompi_data']=array();
         $x=(new DateTime())->format("U");
         $x=$x."_".$cid;

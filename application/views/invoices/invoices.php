@@ -321,7 +321,7 @@
 });
     //esta es la forma personalizada que en el proceso echo queda al iniciar sesion o abrir facturas 
     
-    <?php if($promo1!=null || date("d")>=20){ echo "console.log('".date("d")."');" ?>
+    <?php if($promo1!=null || count($data_estados_promos)==0 ){ echo "console.log('".date("d")."');" ?>
     checkout.open(function ( result ) {
   var transaction = result.transaction
   console.log('Transaction ID: ', transaction.id)
