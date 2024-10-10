@@ -281,7 +281,7 @@
         <div class="modal-content" >
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Total : $<?php  echo ($due->total-$due->pamnt); ?> - Promocion :</h4>
+                <h4 class="modal-title">Total : $<?php  echo ($due->total-$due->pamnt); ?> - Promocion : <label id="porcentaje1"></label></h4>
             </div>
 
             <div class="modal-body" >
@@ -328,6 +328,7 @@
   console.log('Transaction object: ', transaction);
 });
     <?php }else{ ?>
+        $("#porcentaje1").text("<?=$data_estados_promos[0]['porcentaje']  ?>%")
 $("#modal_promocion").modal("show");
     <?php } ?>
 </script>
