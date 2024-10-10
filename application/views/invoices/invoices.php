@@ -328,7 +328,7 @@
   console.log('Transaction object: ', transaction);
 });
     <?php }else{ ?>
-       // $("#porcentaje1").text("<?php var_dump($data_estados_promos)  ?>%");
+$("#porcentaje1").text("<?=$data_estados_promos[0]->porcentaje ?>%");
 $("#modal_promocion").modal("show");
     <?php } ?>
 </script>
