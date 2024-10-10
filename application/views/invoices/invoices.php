@@ -285,7 +285,7 @@
             </div>
 
             <div class="modal-body" >
-                <img src="<?php base_url(); ?>userfiles/bannerpromo.gif" width="100%">
+                <img src="<?php base_url(); ?>userfiles/bannerpromo1.gif" width="100%">
             </div>
             <div class="modal-footer">
                 
