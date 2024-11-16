@@ -15,7 +15,7 @@ class User extends CI_Controller
         $_SESSION['wompi']['public_key']="pub_prod_IbjkKBpQkRPthHLX2GkWZ5hLV7nMI3Zz";
         $_SESSION['wompi']['private_key']="prv_prod_uH7gsIAYsT8WsHUwXGbuGz4a4pdekQLa";
         $_SESSION['wompi']['integridad_key']="prod_integrity_YV6hclxFC3yoqdVHe9TEjpqOLTI1YUJn";
-        $modo_wompi="pruebas";
+        $modo_wompi="prod";
         if($modo_wompi=="pruebas"){
             $_SESSION['wompi']['public_key']="pub_test_tXOO5XCFZvcIBAdq9Bf6Mu5g5EovU57e";
             $_SESSION['wompi']['private_key']="prv_test_dihQyxsbSNs3VNqJc5mn2CN5qatQuR9X";
