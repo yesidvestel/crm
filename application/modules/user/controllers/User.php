@@ -12,14 +12,14 @@ class User extends CI_Controller
         $_SESSION['url_web_service']="https://www.saves-vestel.com/Servicio";
         //$_SESSION['url_web_service']="http://localhost/CRMvestel/Servicio";
 
-        $_SESSION['wompi']['public_key']="pub_prod_YDEGM72YP1NG7VTLfLTXis1N9S22Ykkj";
-        $_SESSION['wompi']['private_key']="prv_prod_HFaQ3kh3uxJee6CeoBJZnj5OcgjagXnz";
-        $_SESSION['wompi']['integridad_key']="prod_integrity_qaaPLH0FonmVUnNvyMROm6OHGvOYleGx";
-        $modo_wompi="prod";
+        $_SESSION['wompi']['public_key']="pub_prod_IbjkKBpQkRPthHLX2GkWZ5hLV7nMI3Zz";
+        $_SESSION['wompi']['private_key']="prv_prod_uH7gsIAYsT8WsHUwXGbuGz4a4pdekQLa";
+        $_SESSION['wompi']['integridad_key']="prod_integrity_YV6hclxFC3yoqdVHe9TEjpqOLTI1YUJn";
+        $modo_wompi="pruebas";
         if($modo_wompi=="pruebas"){
-            $_SESSION['wompi']['public_key']="pub_test_TSNkpXBw0Y68p3ZsB24N2eFrhUd2URSl";
-            $_SESSION['wompi']['private_key']="prv_test_wRYXrdDyqA5K7khBavOtd8QoSTX3FKCD";
-            $_SESSION['wompi']['integridad_key']="test_integrity_G3MUTEFlbTSRcv4iHcpDyFcjACFMBQVm";
+            $_SESSION['wompi']['public_key']="pub_test_tXOO5XCFZvcIBAdq9Bf6Mu5g5EovU57e";
+            $_SESSION['wompi']['private_key']="prv_test_dihQyxsbSNs3VNqJc5mn2CN5qatQuR9X";
+            $_SESSION['wompi']['integridad_key']="test_integrity_UwrtCtxKsvd5RSL0cGV0hOrCfLsLUBBO";
         }
         
 		$this->captcha = $this->general->public_key()->captcha;
