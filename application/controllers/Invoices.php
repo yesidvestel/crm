@@ -52,7 +52,7 @@ class Invoices extends CI_Controller
         $_SESSION['wompi']['public_key']=json_decode( $data['dt']->datos_wompi->valor)->public_key;
         $_SESSION['wompi']['private_key']=json_decode( $data['dt']->datos_wompi->valor)->private_key;
         $_SESSION['wompi']['integridad_key']=json_decode( $data['dt']->datos_wompi->valor)->integridad_key;
-        $modo_wompi="pruebas";
+        $modo_wompi="pru";
         if($modo_wompi=="pruebas"){
             $_SESSION['wompi']['public_key']=json_decode( $data['dt']->datos_wompi->valor)->test_public_key;
             $_SESSION['wompi']['private_key']=json_decode( $data['dt']->datos_wompi->valor)->test_private_key;
