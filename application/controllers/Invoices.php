@@ -76,10 +76,11 @@ class Invoices extends CI_Controller
         $data['wompi_data']['fecha']=date("Y-m-d H:i:s");
         $data['wompi_data']['cid_user']=$cid;
         $data['wompi_data']['estado']='Inicial';
+        $data['wompi_data']['public_key']=$_SESSION['wompi']['public_key'];
         if($data['wompi_data']['debe']>=1000){
             $this->db->insert("wompi_data_orden",$data['wompi_data']);    
         }
-        $data['wompi_data']['public_key']=$_SESSION['wompi']['public_key'];
+        
         
 
         $this->load->view('includes/header');
