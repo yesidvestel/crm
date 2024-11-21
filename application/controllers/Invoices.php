@@ -49,10 +49,10 @@ class Invoices extends CI_Controller
         $data['dt']=json_decode($data['dt']);
 
 //seccion de llenado de variables wompi
-        $_SESSION['wompi']['public_key']="pub_prod_VeTH2KgZuvhLpU2PyB9QYb85w1tIHrWf";//json_decode( $data['dt']->datos_wompi->valor)->public_key;
-        $_SESSION['wompi']['private_key']="prv_prod_wOUHLIxjUNvmh1fF0pMSvOgKJIp68vyw";//json_decode( $data['dt']->datos_wompi->valor)->private_key;
-        $_SESSION['wompi']['integridad_key']="prod_integrity_jNKPGGSEFolmu8GryElg0kpAtAFSlsTB";//json_decode( $data['dt']->datos_wompi->valor)->integridad_key;
-        $modo_wompi="pru";
+        $_SESSION['wompi']['public_key']=json_decode( $data['dt']->datos_wompi->valor)->public_key;
+        $_SESSION['wompi']['private_key']=json_decode( $data['dt']->datos_wompi->valor)->private_key;
+        $_SESSION['wompi']['integridad_key']=json_decode( $data['dt']->datos_wompi->valor)->integridad_key;
+        $modo_wompi="pruebas";
         if($modo_wompi=="pruebas"){
             $_SESSION['wompi']['public_key']=json_decode( $data['dt']->datos_wompi->valor)->test_public_key;
             $_SESSION['wompi']['private_key']=json_decode( $data['dt']->datos_wompi->valor)->test_private_key;
