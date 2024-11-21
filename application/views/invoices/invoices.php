@@ -31,6 +31,7 @@
     height: 80px !important;
 }
 </style>
+<?php $wompi_data['public_key']= $_SESSION['wompi']['public_key']; ?>
 <div class="app-content content container-fluid">
     <div class="content-wrapper">
         <div class="content-header row">
