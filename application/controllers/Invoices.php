@@ -44,6 +44,20 @@ class Invoices extends CI_Controller
         
         $data['dt']=$this->communication->obtener($cuerpo,"get_due_customer");
 
+//seccion de llenado de variables wompi
+        $_SESSION['wompi']['public_key']=json_decode($dt->datos_wompi->valor)->public_key;
+        $_SESSION['wompi']['private_key']=json_decode($dt->datos_wompi->valor)->private_key;
+        $_SESSION['wompi']['integridad_key']=json_decode($dt->datos_wompi->valor)->integridad_key;
+        $modo_wompi="prod";
+        if($modo_wompi=="pruebas"){
+            $_SESSION['wompi']['public_key']=json_decode($dt->datos_wompi->valor)->test_public_key;
+            $_SESSION['wompi']['private_key']=json_decode($dt->datos_wompi->valor)->test_private_key;
+            $_SESSION['wompi']['integridad_key']=json_decode($dt->datos_wompi->valor)->test_integridad_key;
+
+            
+        }
+// end ;
+        
         $data['dt']=json_decode($data['dt']);
 
         $data['due']=$data['dt']->due;
